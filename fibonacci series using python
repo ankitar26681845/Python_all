@@ -1,0 +1,13 @@
+a = 0
+b = 1
+count = 0
+n = 5
+while count<n:
+    print(a)
+    result= a+b
+
+    a = b
+    b = result
+    count +=1
+print()
+
