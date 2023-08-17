@@ -1,0 +1,6 @@
+m =[1,2,3]
+r = [1,4,5]
+result = [0,0,0]
+for i in range(len(m)):
+    result[i]+=m[i]+r[i]
+print(result)
