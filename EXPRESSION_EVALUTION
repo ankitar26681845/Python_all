@@ -1,0 +1,15 @@
+def evaluate_expression(expression):
+    stack =[]
+    operators ={'+':lambda a,b:a+b,'-':lambda a,b:a-b,'*':lambda a,b:a*b,'/':lambda a,b:a/b}
+    tokens = expression.split()
+    for token in tokens:
+        if token.isdigit():
+            stack.append(int(token))
+        elif token in operators:
+            operand2 = stack.pop()
+            operand1 = stack.pop()
+            result = operators[token](operand1,operand2)
+            stack.append(result)
+    return stack.pop()
+expression = "2 3 4 5 + - * "
+print(evaluate_expression(expression))
