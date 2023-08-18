@@ -1,0 +1,10 @@
+def fun(arr,n):
+    for i in range(n):
+        for j in range(n-i-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+    return arr
+
+arr = [1,2,5,4,9,7]
+n = len(arr)
+print(fun(arr,n))
