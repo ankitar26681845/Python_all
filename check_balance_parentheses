@@ -1,0 +1,17 @@
+# check the balance parenthesis
+def balance_parenthesis(expression):
+    stack = []
+    start = "([{"
+    end = ")]}"
+    for char in expression:
+        if char in start:
+            stack.append(char)
+        elif char in end:
+            if not stack:
+                return False
+            top = stack.pop()
+            if start.index(top)!=end.index(char):
+                return False
+    return len(stack)==0
+expression = "(())[]"
+print(balance_parenthesis(expression))
