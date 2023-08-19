@@ -1,0 +1,7 @@
+# list as a stack and queue
+list1 =[]
+list1.append(2)
+list1.append(3)
+list1.append(4)
+print(list1.pop())
+print(list1.pop(0))
