@@ -1,0 +1,15 @@
+    def deletionAtBeginning(self):
+        while self.head is None:
+            return
+        self.head  = self.head.next
+
+    def delete_at_end(self):
+        if not self.head:
+            return
+        if not self.head.next:
+            self.head = None
+            return
+        current = self.head
+        while current.next.next:
+            current = current.next
+        current.next = None
