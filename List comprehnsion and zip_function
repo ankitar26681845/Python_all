@@ -1,0 +1,11 @@
+# list comprehnsion with custom key
+list1 = [1,2,3,4,5]
+list2 = [x**2 for x in list1 if x%2==0]
+print(list2)
+
+# zip function
+# zip function combines multiple lists element - wise
+name = ["ankit","raman","manoj","drona"]
+age = [23,43,28,19]
+for i,j in zip(name,age):
+    print(f"the name {i} with the age {j} has done a lot of work")
