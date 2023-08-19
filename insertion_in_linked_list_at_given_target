@@ -1,0 +1,11 @@
+    def attarget(self,t_v,n_v):
+        if self.head is None:
+            return
+        new_node = Node(n_v)
+        current = self.head
+        while current:
+            if current.data == t_v:
+                new_node.next = current.next
+                current.next = new_node
+                return
+            current = current.next
