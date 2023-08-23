@@ -1,0 +1,10 @@
+def commonElements (self,A, B, C, n1, n2, n3):
+        # your code here
+        s1 = set(A)
+        s2 = set(B)
+        s3 = set(C)
+        result = s1&s2
+        z= result&s3
+        if z =={}:
+            return -1
+        return sorted(z)
