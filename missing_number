@@ -1,0 +1,7 @@
+def missingNumber(self,array,n):
+        # code here
+        count = 0
+        sum = n*(n+1)//2
+        for i in range(n-1):
+            count +=array[i]
+        return (sum-count)
