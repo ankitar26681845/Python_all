@@ -1,0 +1,14 @@
+def reverseWord(self,s):
+        #your code here
+        stack =[]
+        stack1 = []
+        stack2= ""
+        f =" "
+        for i in s:
+            stack.append(i)
+        n = len(stack)
+        for i in range(n):
+            stack1 += [stack.pop()]
+        for i in stack1:
+            stack2 +=i
+        return stack2
