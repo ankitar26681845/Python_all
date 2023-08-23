@@ -1,0 +1,9 @@
+def doUnion(self,a,n,b,m):
+        p = set(a)
+        q = set(b)
+        s = p  | q
+        count = 0
+        for i in s:
+            count +=1
+        return count
+            
