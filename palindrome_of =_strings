@@ -1,0 +1,15 @@
+def isPalindrome(self, S):
+		# code here
+		m = []
+		t =[]
+		q=[]
+		for i in S:
+		    m.append(i)
+		for i in range(len(m)):
+		    t+= m.pop()
+		for i in S:
+		    q.append(i)
+		if q==t:
+		    return 1
+		return 0
+		    
