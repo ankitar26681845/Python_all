@@ -1,0 +1,8 @@
+ def findSingle(self, N, arr):
+        # code herefor 
+        duplicate = [ number for number in arr if arr.count(number)>1 ]
+        s = set(duplicate)
+        t = set(arr)
+        m = t-s
+        for i in m:
+            return i
